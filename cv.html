@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>cv.html</title>
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .photo-section {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .section-title {
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: #007bff; /* Couleur personnalisée pour les titres */
+        }
+        footer {
+            margin-top: 30px;
+            padding: 20px 0;
+            background-color: #007bff;
+            color: white;
+        }
+        #Carte {
+            margin-top: 20px;
+            padding: 20px;
+	          background-color: rgb(174, 197, 174);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #343a40;
+        }
+        .fw-bold {
+            font-weight: bold;
+        }
+        .display-5 {
+            color: rgb(2, 2, 36);
+        }
+        .text-center img {
+            width: 20%;
+            height: auto;
+        }
+        .arrow {
+            font-size: 5rem; /* Taille de la flèche */
+            color: rgba(3, 3, 61, 0.753); /* Couleur de la flèche */
+            opacity: 0; /* Initially hidden */
+            transition: opacity 0.3s; /* Smooth transition */
+            cursor: pointer; /* Change cursor to pointer on hover */
+        }
+        .d-flex:hover .arrow {
+            opacity: 1; /* Show arrows on hover */
+        }
+
+        @keyframes scroll {
+            100% {
+                transform: translateX(-100%); /* Start from the right */
+            }
+            0% {
+                transform: translateX(100%); /* End at the left */
+            }
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    </style>
+</head>
+<body>
+  <div class="container"> 
+    <div id="Carte" class="text-center mb-4">
+        <div class="d-flex justify-content-between">  
+            <h1 class="fw-bold mx-3 text-center ">
+                Abdoul-Aziz HOUNNOU 
+            </h1>
+        </div>
+    </div>
+    <div class="container mt-5">
+        <header class="text-center">
+            <p><strong>
+               HOUNNOU AbdoulAziz est un jeune étudiant ,developer web , designer en 2ème année en Réseau Mobilité et sécurité à PigierBenin.
+              Passionné par les technologies de l'information, il excelle dans ses études et se distingue par sa curiosité intellectuelle.
+              AbdoulAziz participe activement aux projets de groupe, où il démontre ses compétences en collaboration et en leadership.
+              </strong></p>
+        </header>
+
+        <div class="row">
+            <div class="col-md-3 photo-section">
+                <img src="ams.jpg" style="height: 30%; width: auto;" alt="">
+            </div>
+            <div class="col-md-9">
+                <section>
+                    <h2 style="margin-left: 300px;" class="section-title">Informations Personnelles</h2>
+                    <p style="margin-left: 300px;">Email:hounnou.abdoulaziz238@gmail.com</p>
+                    <p style="margin-left: 300px;">Téléphone: +229 67915930</p>
+                    <p style="margin-left: 300px;">Adresse: 123 Rue de l'Université PigierBenin,Cotonou, 8è arrondissement </p>
+                </section>
+
+                <section>
+                    <h2 style="margin-left: 100px;" class="section-title">Expérience Professionnelle</h2>
+                    <ul style="margin-left: 100px;">
+                        <li style="margin-left: 100px;"><strong>Stagiaire Développeur</strong> - Société XYZ (Juin 2023 - Août 2023)</li>
+                        <li style="margin-left: 100px;"><strong>Assistant Informatique</strong> - Université de Paris (Septembre 2022 - Mai 2023)</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2 style="margin-left: 100px;" class="section-title">Compétences</h2>
+                    <ul style="margin-left: 100px;">
+                        <li style="margin-left: 100px;">Langages de programmation : Python, Java, C++</li>
+                        <li style="margin-left: 100px;">Développement web : HTML, CSS, JavaScript</li>
+                        <li style="margin-left: 100px;">Base de données : MySQL, MongoDB</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2 style="margin-left: 100px;" class="section-title">Formation</h2>
+                    <ul style="margin-left: 100px;">
+                        <li style="margin-left: 100px;"><strong>Licence en Informatique</strong> - Université de Paris (2021 - Présent)</li>
+                        <li style="margin-left: 100px;"><strong>Baccalauréat Scientifique</strong> - Lycée de la Ville (2018)</li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center align-items-center vh-100">
+          <a href="Page5.html">
+            <i style=" margin-left: 900px;" class="fas fa-arrow-left arrow" onclick="goToPreviousPage()"></i>
+          </a>
+         <a href="index.html">
+          <i style="margin: 800px;" class="fas fa-arrow-right arrow" onclick="goToNextPage()"></i>
+         </a>   
+      </div>
+      
+      <script>
+      function goToPreviousPage() {
+      window.history.back(); // Navigate to the previous page
+      }
+      
+      function goToNextPage() {
+      window.location.href = "nextPageURL.html"; // Replace with the URL of the next page
+      }
+      </script>
+
+<div class="btn-group me-2" role="group" aria-label="First group">
+<a href="Page1.html" class="d-inline-block">
+<button type="button" class="btn btn-primary">1</button>
+</a>
+<a href="Page2.html" class="d-inline-block">
+<button type="button" class="btn btn-primary">2</button>
+</a>
+<a href="Page3.html" class="d-inline-block">
+<button type="button" class="btn btn-primary">3</button>
+</a>
+<a href="Page4.html" class="d-inline-block">
+<button type="button" class="btn btn-primary">4</button>
+</a>
+</div>
+<div class="btn-group me-2" role="group" aria-label="Second group">
+<a href="Page5.html" class="d-inline-block">   
+<button type="button" class="btn btn-secondary">5</button>
+</a>
+<a href="Page6.html" class="d-inline-block">
+<button type="button" class="btn btn-secondary">6</button>
+</a>
+</div>
+<div class="btn-group" role="group" aria-label="Third group">
+<a href="cv.html" class="d-inline-block">
+<button type="button" class="btn btn-info">::</button>
+</a>
+</div>
+</div>
+</center>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+function handleSubmit(event) {
+event.preventDefault(); // Empêche l'envoi du formulaire
+
+// Simule un chargement de 2 secondes
+setTimeout(function() {
+// Affiche le message de confirmation
+document.getElementById('confirmationMessage').style.display = 'block';
+// Réinitialise le formulaire
+document.getElementById('myForm').reset();
+}, 2000);
+}
+</script>
+        <footer class="text-center">
+            <p>&copy; 2024 AbdoulAziz HOUNNOU.Tous droits réservés.</p>
+        </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
